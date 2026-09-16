@@ -22,8 +22,7 @@ export function useAuthNavigationGuard(): void {
     const inSplashGroup = segments[0] === "(splash)";
     const inGuardGroup = segments[0] === "(guard)";
     const inAdminGroup = segments[0] === "(admin)";
-    const onChangePassword =
-      segments[0] === "(auth)" && segments[1] === "change-password";
+    const onChangePassword = segments.join("/") === "(auth)/change-password";
 
     if (isInitializing) {
       if (!inSplashGroup) {
@@ -74,3 +73,4 @@ export function useAuthNavigationGuard(): void {
     }
   }, [status, isInitializing, session, segments, router]);
 }
+
