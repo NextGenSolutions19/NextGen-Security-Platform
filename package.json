@@ -1,0 +1,17 @@
+{
+  "name": "nextgen-security-platform",
+  "version": "0.0.0",
+  "private": true,
+  "description": "NextGen Security Platform — society security management for Guards and Society Admins",
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "mobile": "pnpm --filter @nextgen/mobile start"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "workspaces": ["apps/*", "packages/*"]
+}

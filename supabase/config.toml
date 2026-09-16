@@ -1,0 +1,83 @@
+# For use in Edge Functions locally
+# https://supabase.com/docs/guides/functions/function-configuration
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed/dev.sql"]
+
+[functions]
+
+[functions.validate-society-code]
+verify_jwt = false
+
+[functions.auth-login]
+verify_jwt = false
+
+[functions.auth-logout]
+verify_jwt = false
+
+[functions.auth-refresh]
+verify_jwt = false
+
+[functions.change-credentials]
+verify_jwt = false
+
+[functions.register-visitor]
+verify_jwt = false
+
+[functions.send-visitor-otp]
+verify_jwt = false
+
+[functions.verify-visitor-otp]
+verify_jwt = false
+
+[functions.upload-visitor-photo]
+verify_jwt = false
+
+[functions.checkout-visitor]
+verify_jwt = false
+
+[functions.get-visitor-photo]
+verify_jwt = false
+
+[functions.raise-emergency]
+verify_jwt = false
+
+[functions.admin-resident]
+verify_jwt = false
+
+[functions.admin-resident-import-verify]
+verify_jwt = false
+
+[functions.admin-resident-import-confirm]
+verify_jwt = false
+
+[functions.society-security-policies]
+verify_jwt = false
+
+[functions.admin-emergency]
+verify_jwt = false
+
+[functions.admin-management]
+verify_jwt = false
+
+[functions.admin-guard-management]
+verify_jwt = false
+
+[functions.admin-create-recurring-pass]
+verify_jwt = false
+
+[functions.get-recurring-pass-photo]
+verify_jwt = false
+
+[functions.admin-update-recurring-pass-schedule]
+verify_jwt = false
+
+[functions.admin-issue-recurring-pass-qr]
+verify_jwt = false
+
+[functions.admin-manage-recurring-pass-lifecycle]
+verify_jwt = false
+
+[functions.guard-recurring-visitor]
+verify_jwt = false

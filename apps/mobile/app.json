@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "NextGen Security Platform",
+    "slug": "nextgen-security-platform",
+    "version": "0.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "nextgen-security",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nextgen.securityplatform"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.nextgen.securityplatform"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-document-picker",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow NextGen Security Platform to capture visitor photos.",
+          "photosPermission": "Allow NextGen Security Platform to import visitor photos from your library."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow NextGen Security Platform to scan recurring visitor QR passes."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Expo / React Native
+.expo/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Native builds
+ios/
+android/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Supabase local
+supabase/.branches
+supabase/.temp
+
+# OS
+Thumbs.db
+
+# Android APK/AAB build artifacts
+*.apk
+*.aab
+
+# Expo temporary QA/build folders
+apps/mobile/.expo-tmp-*/
