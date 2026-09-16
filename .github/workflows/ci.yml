@@ -20,10 +20,7 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
-      - name: Setup Node.js
+        - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
@@ -45,3 +42,4 @@ jobs:
   #   steps:
   #     - uses: actions/checkout@v4
   #     - run: echo "RLS tests added in M01"
+
