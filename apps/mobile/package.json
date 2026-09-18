@@ -19,6 +19,7 @@
     "@supabase/supabase-js": "^2.49.1",
     "dijkstrajs": "^1.0.3",
     "expo": "~52.0.46",
+    "expo-asset": "~11.0.5",
     "expo-camera": "~16.0.18",
     "expo-constants": "~17.0.8",
     "expo-document-picker": "~13.0.3",

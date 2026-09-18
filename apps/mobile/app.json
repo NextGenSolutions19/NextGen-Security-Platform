@@ -22,7 +22,11 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.nextgen.securityplatform"
+      "package": "com.nextgen.securityplatform",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
+      ]
     },
     "plugins": [
       "expo-router",
@@ -40,10 +44,20 @@
         {
           "cameraPermission": "Allow NextGen Security Platform to scan recurring visitor QR passes."
         }
-      ]
+      ],
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "3397938b-6c5a-4745-9735-540dc993b133"
+      }
+    },
+    "owner": "nextgen-web-solutions"
   }
 }
